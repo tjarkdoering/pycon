@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-__version__ = 'v0.1' # knows 1 conversions: F
-avail_formats = 'F'
+__version__ = 'v0.2' # knows 2 conversions: F, in
+avail_formats = 'F, in'
 
 # ---
 # setup
@@ -59,7 +59,7 @@ stupid_value = None
 stupid_unit = None
 
 if is_intstring(sys.argv[arg_pos]) :
-    stupid_value = int(sys.argv[arg_pos])
+    stupid_value = float(sys.argv[arg_pos])
 else :
     print(short_help)
 
@@ -82,6 +82,11 @@ if stupid_unit == 'F' : # Convert from Fahrenheit
     kelvin = metric_value + 273.15
     additional_output = str(format(kelvin, '.2f')) + ' K'
 
+elif stupid_unit == 'in' : # Convert from inches:
+    metric_value = stupid_value * 0.0254
+    metric_unit = 'm'
+    milim = metric_value * 1000
+    additional_output = str(format(milim, '.2f')) + ' mm'
 
 else :
     print('This conversion is not supported yet.\n You can only convert:', avail_formats)
@@ -89,10 +94,9 @@ else :
 
 
 # ---
-# finally printing the stuff
+# printing results
 
-
-# in case of verbose setting:
+# mind the verbose option
 if verb == True :
     print('You want to convert', stupid_value, stupid_unit, 'to metric.\nYour result is ')
     print( format(metric_value, '.2f') , metric_unit )
