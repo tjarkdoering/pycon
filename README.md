@@ -40,4 +40,4 @@ Oh so much:
   * Ignore upper/lower case differences
 * add more conversions
 * improve overall code quality
-  * use `argpars`?
+  * use `argparse`?
