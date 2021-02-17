@@ -31,14 +31,3 @@ Thank you for converting to the metric system.
     $ pycon 40 F
     4.44 °C
     277.59 K
-
-
-## ToDo
-
-Oh so much:
-* Make it more resilient to user input error
-  * Add exceptions for empty arguments
-  * Ignore upper/lower case differences
-* add more conversions
-* improve overall code quality
-  * use `argparse`?
