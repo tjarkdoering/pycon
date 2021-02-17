@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-__version__ = 'v0.2' # knows 2 conversions: F, in
-avail_formats = 'F, in'
+__version__ = 'v0.4'
+avail_formats = 'F, in, psi, oz'
 
 # ---
 # setup
