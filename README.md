@@ -13,15 +13,15 @@ Thank you for converting to the metric system.
 
 ## Usage
 
-   pycon [-v] N U
-
+    pycon [-v] N U
+    
     Options:
-    -v          Verbose output
-    -h, --help  Shows this help message
+     -v          Verbose output
+     -h, --help  Shows this help message
 
     Arguments:
-    N           A number to convert
-    U           The corresponding unit
+     N           A number to convert
+     U           The corresponding unit
 
 ### Example
 
