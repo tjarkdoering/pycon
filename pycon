@@ -76,17 +76,29 @@ metric_value = None
 metric_unit  = None
 additional_output = ''
 
-if stupid_unit == 'F' : # Convert from Fahrenheit
+if stupid_unit == 'F' : # Convert Fahrenheit
     metric_value = (5/9)*(stupid_value - 32)
     metric_unit = '°C'
     kelvin = metric_value + 273.15
     additional_output = str(format(kelvin, '.2f')) + ' K'
 
-elif stupid_unit == 'in' : # Convert from inches:
+elif stupid_unit == 'in' : # Convert inches:
     metric_value = stupid_value * 0.0254
     metric_unit = 'm'
     milim = metric_value * 1000
     additional_output = str(format(milim, '.2f')) + ' mm'
+
+elif stupid_unit == 'psi' : # Convert psi
+    metric_value = stupid_value * 6.894757
+    metric_unit = 'kPa'
+    bar = metric_value / 100
+    additional_output = str(format(bar, '.2f')) + ' bar'
+
+
+elif stupid_unit == 'oz' : # Convert oz
+    metric_value = stupid_value * 0.0283495
+    metric_unit = 'kg'
+
 
 else :
     print('This conversion is not supported yet.\n You can only convert:', avail_formats)
