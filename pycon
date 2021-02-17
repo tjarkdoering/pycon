@@ -31,8 +31,10 @@ verb = None
 if sys.argv[1] == '-v' :
     verb = True
     print('Using pycon', __version__,'\n')
+    arg_pos = 2
 else :
     verb = False
+    arg_pos = 1
 
 # define functions for checking types
 def is_intstring(i) :
@@ -52,12 +54,6 @@ def is_charstring(s) :
 # validate input and set conversion variables
 
 short_help = 'The first argument must be a number, the second the unit.'
-
-# make sure to account for verbose mode
-if verb == True :
-    arg_pos = 2
-else :
-    arg_pos = 1
 
 stupid_value = None
 stupid_unit = None
