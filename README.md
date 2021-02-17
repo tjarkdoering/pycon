@@ -4,7 +4,7 @@ A conversion tool. To convert to a reasonable sysem of units (aka. the metric sy
 It only converts to metric as other conversions should not be done anyway.
 Thank you for converting to the metric system.
 
-**Note:** The amount of supported units is embarrassingly low. New units come when I need them.
+**Note:** The amount of supported units is embarrassingly low. New units come when I need them. Or someone suggests them.
 
 ## Setup
 
