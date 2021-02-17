@@ -4,12 +4,14 @@ A conversion tool. To convert to a reasonable sysem of units (aka. the metric sy
 It only converts to metric as other conversions should not be done anyway.
 Thank you for converting to the metric system.
 
+
 ## Setup
 
 1. Have `python3` installed.
 2. Copy `pycon` to any of your local `bin` paths.
 3. Make `pycon` executable.
 3. Convert to the metric system.
+
 
 ## Usage
 
@@ -29,3 +31,10 @@ Thank you for converting to the metric system.
     4.44 °C
     277.59 K
 
+
+## ToDo
+
+Oh so much:
+* make it more resilient to user input error
+* add more conversions
+* improve overall code quality
