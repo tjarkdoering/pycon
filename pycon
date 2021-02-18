@@ -22,6 +22,11 @@ def help() :
     print(' U           The corresponding unit')
     quit()
 
+# were no arguments given? print help.
+
+if len(sys.argv) < 2 :
+    help()
+
 if sys.argv[1] == '-h' or sys.argv[1] == '--help':
     help()
 
@@ -30,8 +35,11 @@ if sys.argv[1] == '-h' or sys.argv[1] == '--help':
 verb = None
 if sys.argv[1] == '-v' :
     verb = True
-    print('Using pycon', __version__,'\n')
-    arg_pos = 2
+    if len(sys.argv) < 4 :
+         help()
+    else :
+        print('Using pycon', __version__,'\n')
+        arg_pos = 2
 else :
     verb = False
     arg_pos = 1
