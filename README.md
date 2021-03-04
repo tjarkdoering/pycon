@@ -4,7 +4,18 @@ A conversion tool. To convert to a reasonable sysem of units (aka. the metric sy
 It only converts to metric as other conversions should not be done anyway.
 Thank you for converting to the metric system.
 
-**Note:** The amount of supported units is embarrassingly low. New units come when I need them. Or someone suggests them.
+
+## Supported conversions
+
+The amount of supported units is embarrassingly low. New units come when I need them. Or someone suggests them. Here are the currently supported ones.
+
+| From           | To                       |
+| -------------- | ------------------------ |
+| `F` Fahrenheit | `°C` Celsius, `K` Kelvin |
+| `in` inch      | `mm` Millimeter, `m` Meter |
+| `psi` Pounds per squre inch | `kPa` Kilopascal, `bar` Bar |
+| `oz` Ounces (mass) | `kg` Kilogram |
+
 
 ## Setup
 
