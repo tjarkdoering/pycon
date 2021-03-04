@@ -1,8 +1,9 @@
-name: Integration Example
+name: Integration of RaaS
 on: 
   push:
     branches:
       - main
+      
 jobs:
   build:
     runs-on: ubuntu-latest
