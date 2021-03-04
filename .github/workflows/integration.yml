@@ -14,7 +14,7 @@ jobs:
         with:
         # Enter your API variables below
             apikey: ${{ secrets.raaskey }}
-            enterpriseid: "f7508e3cx"
+            enterpriseid: "f7508e3c"
             user: ${{ github.actor }}
             treecount: 1
             projectid: "14442771" # This projectid can be used to have your trees planted where they are needed the most.
