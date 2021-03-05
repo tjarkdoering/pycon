@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - main
-    types:
-      - closed
 jobs:
   build:
     runs-on: ubuntu-latest
