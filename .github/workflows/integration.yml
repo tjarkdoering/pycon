@@ -1,15 +1,16 @@
 name: Integration of RaaS
 on: 
-  push:
+  pull_request:
     branches:
       - main
-      
+    types:
+      - closed
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Plant a Tree
-        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
+        if: github.event.pull_request.merged == true
         id: planttree
         uses: protontypes/continuous-reforestation@main
         with:
