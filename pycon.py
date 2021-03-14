@@ -128,7 +128,6 @@ if verb == True:
     print(format(metric_value, ".2f"), metric_unit)
     if additional_output != "":
         print(additional_output)
-    
     print("\nThank you for converting to the metric system.")
 else:
     print(format(metric_value, ".2f"), metric_unit)
