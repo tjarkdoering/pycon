@@ -1,4 +1,4 @@
-name: Integration Example
+name: Integration of RaaS
 on: 
   push:
     branches:
