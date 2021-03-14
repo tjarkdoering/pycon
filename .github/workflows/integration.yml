@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Plant a Tree
         id: planttree
-        uses: protontypes/continuous-reforestation@main
+        uses: tjarkdoering/continuous-reforestation@main
         with:
         # Enter your API variables below
             apikey: ${{ secrets.raaskey }}
