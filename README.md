@@ -1,6 +1,6 @@
 # pycon
 
-![](https://byob.yarr.is/tjarkdoering/continuous-reforestation/treebadge)
+![](https://byob.yarr.is/tjarkdoering/pycon/treebadge)
 
 ![](https://byob.yarr.is/RubbaBoy/BYOBTest/time)
 
