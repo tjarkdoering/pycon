@@ -17,7 +17,7 @@ def help():
     print("\nUsage:\n pycon [-v] N U")
     print("\nOptions:")
     print(" -v          Verbose output")
-    print(" -h, --help  Shows this help message and quits") 
+    print(" -h, --help  Shows this help message and quits")
     print("\nArguments:")
     print(" N           A number to convert")
     print(" U           The corresponding unit")
@@ -89,7 +89,7 @@ metric_unit = None
 additional_output = ""
 
 if stupid_unit == "F":  # Convert Fahrenheit
-    metric_value = (5 / 9)*(stupid_value - 32)
+    metric_value = (5 / 9) * (stupid_value - 32)
     metric_unit = "°C"
     kelvin = metric_value + 273.15
     additional_output = str(format(kelvin, ".2f")) + " K"
@@ -112,7 +112,7 @@ elif stupid_unit == "oz":  # Convert oz
 
 else:
     print(
-            "This conversion is not supported yet.\n You can only convert:", avail_formats
+        "This conversion is not supported yet.\n You can only convert:", avail_formats
     )
     quit()
 
@@ -123,17 +123,17 @@ else:
 # mind the verbose option
 if verb == True:
     print(
-            "You want to convert", stupid_value, stupid_unit, "to metric.\nYour result is "
+        "You want to convert", stupid_value, stupid_unit, "to metric.\nYour result is "
     )
-    print( format(metric_value, ".2f"), metric_unit )
+    print(format(metric_value, ".2f"), metric_unit)
     if additional_output != "":
         print(additional_output)
     
     print("\nThank you for converting to the metric system.")
 else:
-    print( format(metric_value, ".2f"), metric_unit )
+    print(format(metric_value, ".2f"), metric_unit)
     if additional_output != "":
         print(additional_output)
-    
+
 
 quit()
