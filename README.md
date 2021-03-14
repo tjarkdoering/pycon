@@ -1,6 +1,6 @@
 # pycon
 
-Have a badge here...
+Have a badge here [Trees planted: #plantedTrees]
 
 A conversion tool. To convert to a reasonable sysem of units (aka. the metric system). Written in python3.
 
